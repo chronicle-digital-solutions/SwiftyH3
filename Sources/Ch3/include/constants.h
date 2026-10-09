@@ -20,6 +20,9 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
+// Import platform constants before defining fallbacks, including with modules.
+#include <math.h>
+
 #ifndef M_PI
 /** pi */
 #define M_PI 3.14159265358979323846

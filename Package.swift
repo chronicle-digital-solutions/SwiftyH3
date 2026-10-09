@@ -10,13 +10,7 @@ let package = Package(
             targets: ["SwiftyH3"]),
     ],
     targets: [
-        .target(
-            name: "Ch3",
-             cSettings: [
-                 // M_PI and M_PI_2 are defined ambiguously in v4.4.1 of H3
-                 .disableWarning("ambiguous-macro")
-             ]
-        ),
+        .target(name: "Ch3"),
         .target(
             name: "SwiftyH3",
             dependencies: ["Ch3"]
